@@ -1,8 +1,8 @@
 # readme
 
-  ## Description 
-creates a readme from user input
-  
+## Description 
+creates read me
+
 ## Table of Contents 
 ​
 If your README is very long, add a table of contents to make it easy for users to find what they need.
@@ -16,13 +16,17 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-## Contributing
-  
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-  
-Please make sure to update tests as appropriate.
-  
-## License
 
-[Apache](https://img.shields.io/badge/License-Apache-blue)
-  
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+Apache
+
+## Badges
+![Apache](https://img.shields.io/badge/License-Apache-blue)
+
+
+
