@@ -5,15 +5,15 @@ const generatemarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [    {
   type: 'input',
-  name: 'name',
-  message: 'What is your name?',
+  name: 'title',
+  message: 'What is the title of your application?',
 },
 {
   type: 'input',
-  name: 'location',
-  message: 'Where are you from?',
+  name: 'Description',
+  message: 'Describe the function of your application?',
 },
-{
+/*{
   type: 'input',
   name: 'hobby',
   message: 'What is your favorite hobby?',
@@ -27,11 +27,12 @@ const questions = [    {
   type: 'input',
   name: 'github',
   message: 'Enter your GitHub Username',
-},
+},*/
 {
-  type: 'input',
-  name: 'linkedin',
-  message: 'Enter your LinkedIn URL.',
+  type: 'list',
+  name: 'license',
+  message: 'what is the license for your application',
+  choices: ['MIT', 'GPLv2', 'Apache']
 },];
 
 // TODO: Create a function to write README file
@@ -46,8 +47,9 @@ function init() {
   inquirer
   .prompt(questions)
   .then((answers) => {
+    console.log(answers);
     const mdPageContent = generatemarkdown(answers);
-
+console.log(mdPageContent);
   });
 }
 
