@@ -37,7 +37,7 @@ const questions = [    {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile('./output/readme.md', htmlPageContent, (err) =>
+  fs.writeFile(fileName, data, (err) =>
   err ? console.log(err) : console.log('Successfully created index.html!')
 );
 }
@@ -50,6 +50,7 @@ function init() {
     console.log(answers);
     const mdPageContent = generatemarkdown(answers);
 console.log(mdPageContent);
+writeToFile('./output/readme.md', mdPageContent)
   });
 }
 
